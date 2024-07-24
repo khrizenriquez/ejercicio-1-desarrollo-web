@@ -1,0 +1,104 @@
+body {
+    background-color: #e1f7d5;
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+}
+header {
+    text-align: center;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    transition: all 0.5s ease;
+}
+nav {
+
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a {
+    padding: 0.5em 1em;
+}
+nav ul li a, 
+nav ul li a:visited,
+nav ul li a:link  {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav ul li a:hover {
+    transition: all 0.5s;
+    background-color: #c9c9ff;
+    border-radius: 10px;
+}
+section article {
+    margin: 0 0 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+section article:nth-child(odd) {
+    background-color: #c9c9ff;
+}
+section article:nth-child(even) {
+    background-color: #fff;
+}
+footer {
+    text-align: center;
+}
+.p-top-10 {
+    padding-top: 10px;
+}
+.p-top-20 {
+    padding-top: 20px;
+}
+.p-top-30 {
+    padding-top: 30px;
+}
+.p-top-40 {
+    padding-top: 40px;
+}
+.p-top-50 {
+    padding-top: 50px;
+}
+.p-bottom-10 {
+    padding-top: 10px;
+}
+.p-bottom-20 {
+    padding-bottom: 20px;
+}
+.p-bottom-30 {
+    padding-bottom: 30px;
+}
+.p-bottom-40 {
+    padding-bottom: 40px;
+}
+.p-bottom-50 {
+    padding-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 480px) {
+    section {
+        flex-direction: column;
+    }
+    section article:nth-child(even) {
+        background-color: #c9c9ff;
+    }
+    section article:nth-child(odd) {
+        background-color: #fff;
+    }
+}
